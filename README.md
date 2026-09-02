@@ -38,23 +38,37 @@ The investigation focused on:
 
 The investigation began with a review of the SOC alert and associated email metadata.
 
+![Initial SOC Alert](SOC87-initial-alert.png)
+
 ### 2. Email Analysis
 
 The email sender, recipient, subject, source IP address, message content, and embedded URL were examined for suspicious characteristics.
+
+![Phishing Email Analysis](SOC87-email-analysis.png)
 
 ### 3. URL Analysis
 
 The URL identified within the email was analyzed using VirusTotal to obtain additional threat intelligence and reputation information.
 
+![VirusTotal URL Analysis](SOC87-URL-analysis.png)
+
 ### 4. Indicators of Compromise
 
 Relevant indicators discovered during the investigation were documented as artifacts for the incident.
+
+The sender IP address was also analyzed using VirusTotal as part of the IOC investigation.
+
+![VirusTotal IP Analysis](SOC87-ip-analysis.png)
 
 ### 5. Incident Determination
 
 The investigation determined that the phishing email was delivered to the recipient and that the recipient interacted with the malicious URL.
 
 **Final Verdict: True Positive - Phishing**
+
+![Investigation Results](SOC87-investigation-results1.png)
+
+![Final Investigation Results](SOC87-investigation-results2.png)
 
 ## Skills Demonstrated
 
